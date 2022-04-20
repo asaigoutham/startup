@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body{
+  background: #9c9da0;
+}
+
+.wrapper .sidebar{
+  background: rgb(72, 72, 73);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100%;
+  padding: 20px 0;
+  transition: all 0.5s ease;
+}
+
+.wrapper .sidebar .profile{
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.wrapper .sidebar .profile img{
+  display: block;
+  width: 100px;
+  height: 100px;
+    border-radius: 50%;
+  margin: 0 auto;
+}
+
+.wrapper .sidebar .profile h3{
+  color: #ffffff;
+  margin: 10px 0 5px;
+}
+
+.wrapper .sidebar .profile p{
+  color: rgb(206, 240, 253);
+  font-size: 14px;
+}
+
+.wrapper .sidebar ul li a{
+  display: block;
+  padding: 18px 30px;
+           /* border-bottom: 1px solid #10558d;*/
+  color: rgb(241, 237, 237);
+  font-size: 16px;
+  position: relative;
+}
+
+.wrapper .sidebar ul li a .icon{
+  color: #dee4ec;
+  width: 30px;
+  display: inline-block;
+}
+
+ 
+.wrapper .sidebar ul li a:hover,
+.wrapper .sidebar ul li a.active{
+  color: #ee8484;
+
+  background:rgb(10, 10, 10);
+    border-right: 2px solid white;
+}
+
+.wrapper .sidebar ul li a:hover .icon,
+.wrapper .sidebar ul li a.active .icon{
+  color: #ee8484;
+}
+
+.wrapper .sidebar ul li a:hover::before,
+.wrapper .sidebar ul li a.active::before{
+  display: block;
+}
+
+.wrapper .section{
+  width: calc(100% - 225px);
+  margin-left: 225px;
+}
+ .wrapper .section .container{
+  margin: 0 auto;
+  background: rgb(3, 3, 3);
+  padding: 15px;
+  height: 100px;
+  line-height: 30px;
+}
+body.active .wrapper .sidebar{
+  left: -225px;
+}
+
+body.active .wrapper .section{
+  margin-left: 0;
+  width: 100%;
+}
+.mainpage{
+    margin-top: 60px;
+    display: flex;
+    padding: 0px 30px 0px 0px;
+}
+.mainpage .left {
+    background-color: rgb(61, 58, 58);
+    height:500px;
+    width: 450px;
+    margin-left: 400px;
+    box-shadow: 1px 1px 3px 1px;
+}
+.mainpage .right{
+    background-color: rgb(61, 58, 58);
+    height:500px;
+    width: 450px;
+    margin-left: 100px;
+    box-shadow: 1px 1px 3px 1px;
+}
+.search-bar{
+    width: 40%;
+    height: 45px;
+    margin-top: 10px;
+    margin-left: 300px;
+    border-radius: 30px;
+    background-color: rgb(241, 240, 240);
+}
+.search-bar::placeholder{
+    color: rgb(79, 80, 80);
+}
+.btn{
+    cursor: pointer;
+    margin-left: 8px;
+    height: 45px;
+    border-radius: 30px;
+    width: 110px;
+    background-color: #d8c8cc;
+    font-size: 22px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.button{
+    cursor: pointer;
+    margin-left: 100px;
+    height: 45px;
+    border-radius: 5px;
+    width: 200px;
+    background-color: #fd6e92;
+    font-size: 22px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.btn:active{
+    background-color: #693030;
+    cursor: pointer;
+}
+.btn:active p{
+    color: #fff;
+}
+.mainpage .left img{
+    
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 40px;
+    margin-left: 120px;
+}
+.mainpage .left p{
+    text-align: center;
+    color: #fff;
+    padding-top: 10px;
+    font-size: 16px;
+}
+.up_btn{
+    cursor: pointer;
+    margin-left: 120px;
+    margin-top: 40px ;
+    height: 45px;
+    border-radius: 5px;
+    width: 200px;
+    background-color: #fd6e92;
+    font-size: 22px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.mainpage .right ul li a {
+    display: block;
+    padding: 20px 20px;
+    border-bottom: 1px solid #717274;
+    color: rgb(241, 237, 237);
+    position: relative;
+  }
+ .mainpage .right ul li h4 {
+  padding: 5px 15px;
+  color: rgb(241, 237, 237);
+  font-size: 14px;
+}
+.mainpage .right ul li p{
+    padding: 10px 10px;
+    color: rgb(241, 237, 237);
+    font-size: 25px;
+  }
+  .mainpage .right ul li h2{
+    padding: 5px 15px;
+    color: rgb(241, 237, 237);
+    font-size: 25px;
+  }
+  .mainpage .right ul li h5{
+    padding: 5px 10px;
+    color: rgb(241, 237, 237);
+    font-size: 14px;
+  }
+  .feed_btn{
+    cursor: pointer;
+    margin-left: 10px;
+    margin-top: 40px ;
+    margin-bottom: 30px;
+    height: 45px;
+    border-radius: 5px;
+    width: 100px;
+    background-color: #fd6e92;
+    font-size: 22px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+

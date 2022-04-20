@@ -1,0 +1,25 @@
+
+@media screen {
+    
+}
+
+@media only screen and (max-width:480px){
+
+}
+@media only screen and (max-width:767px){
+
+}
+@media only screen and (max-width:1025px){
+    body{
+        font-size: 17px;
+    }
+    .hero-text h1{margin-bottom: 10px;}
+    .section-des{width: 95%;}
+    .work-step div{padding-top: px;}
+}
+@media only screen and (max-width:1200px){
+    .row{ padding: 0 2%;}
+    .hero-text h1{font-size: 231%;}
+    .plan-box2{height: 200px;}
+    .plan-box1{ height: 250px;}
+}
